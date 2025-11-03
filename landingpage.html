@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasty Bite Restaurant</title>
+  <link href="https://icon-library.com/images/restaurant-icon-transparent/restaurant-icon-transparent-17.jpg" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    /* logo image removed - no image displayed for brand */
+    nav .logo svg {
+      height: 50px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    nav .logo h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: none;
+      color: #e65c00;
+    }
+
+    .hero {
+      background-color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .slider {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .address {
+      background-color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .address h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .address p {
+      font-size: 1.1rem;
+      color: grey;
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color:orange;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .slider img {
+        height: 300px;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo" style="display:flex;align-items:center;">
+        <!-- Inline SVG logo (accessible) -->
+        <svg role="img" aria-label="Tasty Bite logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+          <rect width="100" height="100" rx="14" fill="#e65c00" />
+          <text x="50" y="60" font-family="Segoe UI, Roboto, Arial" font-size="46" font-weight="700" fill="#ffffff" text-anchor="middle">TB</text>
+        </svg>
+        <h1 style="margin:0;">Tasty Bite</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Online Order</a></li>
+        <li><a href="#">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+  <h2><i>Welcome to Tasty Bite</i></h2>
+    <p>We serve delicious food and offer luxurious accommodation for our valued guests. Experience taste and comfort like never before.</p>
+  </section>
+  <div class="slider">
+    <img src="https://media.cntraveler.com/photos/591de25bcdc89b3cc7f54545/master/w_1600%2Cc_limit/TownHouse-Galleria-cr-courtesy.jpg" alt="Dining Area">
+  </div>
+  <section class="address">
+    <h2>Contact & Location</h2>
+    <p><strong>Address:</strong> Denton City, Texas, USA</p>
+    <p><strong>Phone:</strong> +1 (939) 260-4717</p>
+    <p><strong>Email:</strong> diningspot@2025.com</p>
+  </section>
+  <footer>
+    <p>2025 &copy; Dining Spot. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
+
